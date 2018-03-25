@@ -1,24 +1,15 @@
-# README
+Personal Website
+==================
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is a personal website created by Nathan Yocum in order to learn
 
-Things you may want to cover:
+* Rails
+* HTML/CSS/JavaScript
+* Responsive Design
+* SQL and Databases
 
-* Ruby version
+Requirements:
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+* Rails 5.1.5
+* Ruby 2.5.5p0
+* mysql
