@@ -1,0 +1,30 @@
+{
+  "name": "personal-website",
+  "version": "1.0.0",
+  "description": "A personal website built to learn node, apollo expres, graphql, react, postgres, and various other things",
+  "main": "src/index.js",
+  "scripts": {
+    "start-dev": "nodemon --exec babel-node src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NathanYocum/personal-website.git"
+  },
+  "author": "Nathan Yocum",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/NathanYocum/personal-website/issues"
+  },
+  "homepage": "https://github.com/NathanYocum/personal-website#readme",
+  "devDependencies": {
+    "apollo-server-express": "^1.3.6",
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-stage-3": "^6.24.1",
+    "body-parser": "^1.18.2",
+    "express": "^4.16.3",
+    "graphql": "^0.13.2",
+    "graphql-tools": "^2.24.0",
+    "nodemon": "^1.17.3"
+  }
+}
