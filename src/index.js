@@ -2,6 +2,7 @@ import express from 'express';
 import bodyParser from 'body-parser';
 import { graphqlExpress, graphiqlExpress } from 'apollo-server-express';
 import { makeExecutableSchema } from 'graphql-tools';
+import cors from 'cors';
 
 import typeDefs from '../schema/schema'
 import resolvers from '../resolvers/resolvers'
@@ -16,6 +17,8 @@ export const schema = makeExecutableSchema({
   resolvers
 });
 
+app.use(cors('*'));
+
 // The GraphQL endpoint
 app.use('/graphql', bodyParser.json(), graphqlExpress({ 
   schema,
@@ -25,9 +28,9 @@ app.use('/graphql', bodyParser.json(), graphqlExpress({
 }));
 
 // GraphiQL, a visual editor for queries
-app.use('/graphiql', graphiqlExpress({ endpointURL: '/graphql' }));
+app.get('/graphiql', graphiqlExpress({ endpointURL: '/graphql' }));
 
 // Start the server
 db.sequelize.sync({}).then(() => {
-  app.listen(3000);
+  app.listen(3030);
 });
